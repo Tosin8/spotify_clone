@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:spotify_clone/constants.dart';
 
 import 'widgets/current_track.dart';
+import 'widgets/playlist_header.dart';
+import 'widgets/side_menu.dart';
 
 void main() {
   runApp(const MyApp());
