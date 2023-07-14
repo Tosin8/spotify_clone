@@ -14,10 +14,18 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Spotify UI',
       debugShowCheckedModeBanner: false,
       darkTheme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        brightness: Brightness.dark,
+        appBarTheme: const AppBarTheme(backgroundColor: Colors.black),
+        scaffoldBackgroundColor: const Color(0xFF121212),
+        //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        primaryColor: Colors.black,
+        hintColor: const Color(0xFF1DB954),
+        iconTheme: const IconThemeData().copyWith(color: Colors.white),
+        fontFamily: 'Montserrat',
+        textTheme: Theme,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const Scaffold(),
     );
   }
 }
