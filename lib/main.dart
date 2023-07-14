@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spotify_clone/constants.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,9 +24,32 @@ class MyApp extends StatelessWidget {
         hintColor: const Color(0xFF1DB954),
         iconTheme: const IconThemeData().copyWith(color: Colors.white),
         fontFamily: 'Montserrat',
-        textTheme: Theme,
+        textTheme: Themes,
       ),
-      home: const Scaffold(),
+      home: Home(),
+    );
+  }
+}
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        children: [
+          Expanded(
+            child: Row(
+              children: [
+                if (MediaQuery.of(context).size.width > 800) SideMenu(),
+                const Expanded(
+                  child: PlaylistScreen(playlist: lofihiphopPlaylist),
+                ),
+              ],
+            ),
+          ),
+          CurrentTrack(),
+        ],
+      ),
     );
   }
 }

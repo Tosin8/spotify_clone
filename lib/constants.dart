@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 // Colors
 
 // ignore: constant_identifier_names
-const Theme = TextTheme(
+const Themes = TextTheme(
     displayMedium: TextStyle(
       color: Colors.white,
       fontSize: 32.0,
