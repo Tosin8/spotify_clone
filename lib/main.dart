@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/constants.dart';
 
+import 'widgets/current_track.dart';
+
 void main() {
   runApp(const MyApp());
 }
